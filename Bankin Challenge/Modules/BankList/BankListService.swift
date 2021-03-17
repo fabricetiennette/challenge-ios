@@ -1,7 +1,7 @@
 import Alamofire
 import AlamofireImage
 
-class BankService {
+class BankListService {
 
     func getImage(_ url: String?, imageView: UIImageView) {
         guard let bankURL = URL(string: url!) else { return }

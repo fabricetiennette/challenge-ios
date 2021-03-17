@@ -23,7 +23,7 @@ class BankListViewController: UIViewController, Storyboarded {
         }
         bankDataSource.imageHandler = { url, imageView in
             DispatchQueue.main.async {
-            viewModel.fetchImage(url: url, imageView: imageView)
+                viewModel.fetchImage(url: url, imageView: imageView)
             }
         }
     }

@@ -3,10 +3,9 @@ import UIKit
 final class BankListViewModel {
 
     let banks: [Bank?]
+    let bankService: BankListService
 
-    let bankService: BankService
-
-    init(banks: [Bank?], bankService: BankService = .init()) {
+    init(banks: [Bank?], bankService: BankListService = .init()) {
         self.banks = banks
         self.bankService = bankService
     }

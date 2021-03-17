@@ -1,6 +1,6 @@
 import UIKit
 
-class BankCoordinator: Coordinator<UIViewController> {
+class BankListCoordinator: Coordinator<UIViewController> {
 
     enum Options {
         case present(UIViewController, style: UIModalPresentationStyle)
