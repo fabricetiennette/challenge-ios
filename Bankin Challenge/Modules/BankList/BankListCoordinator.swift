@@ -21,8 +21,6 @@ class BankListCoordinator: Coordinator<UIViewController> {
         }
     }
 
-    var delegate: CountryListViewModelDelegate?
-
     override func start() {
         DispatchQueue.main.async {
             let viewModel = BankListViewModel(banks: self.banks)

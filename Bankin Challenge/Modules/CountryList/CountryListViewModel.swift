@@ -18,17 +18,6 @@ final class CountryListViewModel {
         fetchCountryList()
     }
 
-    private func fetchCountryList() {
-        countryListService.getCountryList { result in
-            switch result {
-            case .success(let list):
-                UserDefaultConfig.country = list.resources
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-    }
-
     func dipTapOn(_ country: Country) {
         delegate?.didTap(on: country.parentBanks)
     }
@@ -43,5 +32,18 @@ final class CountryListViewModel {
         }
         UserDefaultConfig.country = list
         countriesHandler?(list.unique())
+    }
+
+    // MARK: - Private Methods
+
+    private func fetchCountryList() {
+        countryListService.getCountryList { result in
+            switch result {
+            case .success(let list):
+                UserDefaultConfig.country = list.resources
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
 }

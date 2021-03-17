@@ -18,7 +18,6 @@ extension CountryListCoordinator: CountryListViewModelDelegate {
 
     func didTap(on bank: [Bank?]) {
         let coordinator = BankListCoordinator(banks: bank, options: .push(rootView))
-        coordinator.delegate = self
         add(children: coordinator)
         coordinator.start()
     }

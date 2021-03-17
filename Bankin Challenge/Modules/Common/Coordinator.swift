@@ -21,18 +21,3 @@ class Coordinator<RootView>: CoordinatorType {
 
     func start() {}
 }
-
-protocol CoordinatorDelegate {
-    func finish(from coordinator: CoordinatorType)
-}
-
-extension Coordinator: CoordinatorDelegate {
-    func finish(from coordinator: CoordinatorType) {
-        for (index, children) in childrens.enumerated() {
-            if coordinator === children {
-                childrens.remove(at: index)
-                break
-            }
-        }
-    }
-}
