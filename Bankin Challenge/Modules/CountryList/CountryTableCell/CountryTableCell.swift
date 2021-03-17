@@ -6,11 +6,6 @@ final class CountryTableCell: UITableViewCell {
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var countryImageView: UIImageView!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        setupCell()
-    }
-
     override func layoutSubviews() {
         super.layoutSubviews()
         containerView.layer.cornerRadius = 8
@@ -20,9 +15,6 @@ final class CountryTableCell: UITableViewCell {
         containerView.layer.shadowOffset = CGSize(width: 0, height: 2)
         containerView.layer.masksToBounds = false
         countryImageView.clipsToBounds = true
-    }
-
-    private func setupCell() {
         selectionStyle = .none
     }
 
