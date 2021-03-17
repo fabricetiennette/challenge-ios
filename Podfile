@@ -8,7 +8,7 @@ target 'Bankin Challenge' do
   # Pods for Bankin Challenge
 
 	pod 'Alamofire', '~> 5.2'
-	pod 'Reusable'
+	pod 'AlamofireImage', '~> 4.1'
 
   target 'Bankin ChallengeTests' do
     inherit! :search_paths

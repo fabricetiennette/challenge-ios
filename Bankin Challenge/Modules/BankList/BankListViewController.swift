@@ -21,9 +21,16 @@ class BankListViewController: UIViewController, Storyboarded {
             self.bankDataSource.update(with: viewModel.banks)
             self.bankCollectionView.reloadData()
         }
+        bankDataSource.imageHandler = { url, imageView in
+            DispatchQueue.main.async {
+            viewModel.fetchImage(url: url, imageView: imageView)
+            }
+        }
     }
 
     func setupCollectionView() {
         bankCollectionView.dataSource = bankDataSource
+        bankCollectionView.delegate = bankDataSource
+        bankCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
     }
 }

@@ -1,6 +1,6 @@
 import Foundation
 
-struct Bank: Codable {
+struct Bank: Codable, Equatable, Hashable {
 
     let name: String?
     let logoURL: String?

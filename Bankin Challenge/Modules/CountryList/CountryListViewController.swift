@@ -1,5 +1,4 @@
 import UIKit
-import Reusable
 
 class CountryListViewController: UIViewController, Storyboarded {
 
@@ -29,7 +28,7 @@ class CountryListViewController: UIViewController, Storyboarded {
             guard let self = self else { return }
             self.viewModel?.dipTapOn(country)
         }
-        viewModel.fetchCountryList()
+        viewModel.getCountry()
     }
 
     private func setupTableView() {

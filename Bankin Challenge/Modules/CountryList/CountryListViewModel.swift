@@ -14,14 +14,15 @@ final class CountryListViewModel {
 
     init(countryListService: CountryListService = .init()) {
         self.countryListService = countryListService
+
+        fetchCountryList()
     }
 
-    func fetchCountryList() {
-        countryListService.getCountryList { [weak self] result in
-            guard let self = self else { return }
+    private func fetchCountryList() {
+        countryListService.getCountryList { result in
             switch result {
             case .success(let list):
-                self.countriesHandler?(list.resources)
+                UserDefaultConfig.country = list.resources
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -30,5 +31,17 @@ final class CountryListViewModel {
 
     func dipTapOn(_ country: Country) {
         delegate?.didTap(on: country.parentBanks)
+    }
+
+    func getCountry() {
+        var list = UserDefaultConfig.country
+        _ = list.compactMap { country -> Country? in
+            if country.countryCode == Locale.current.regionCode {
+                list.insert(country, at: 0)
+            }
+            return nil
+        }
+        UserDefaultConfig.country = list
+        countriesHandler?(list.unique())
     }
 }
