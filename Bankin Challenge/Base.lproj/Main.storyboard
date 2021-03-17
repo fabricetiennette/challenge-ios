@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -100,66 +99,9 @@
                     <view key="view" contentMode="scaleToFill" id="WYb-cV-XaT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Dfo-4Q-Tvv">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="15" minimumInteritemSpacing="15" id="YHZ-hV-nyg">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BankCollectionViewCell" id="PAw-0Y-c5H" customClass="BankCollectionViewCell" customModule="Bankin_Challenge" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="W4L-W5-lIZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aSs-Ef-VD0">
-                                                    <rect key="frame" x="10" y="10" width="110" height="75"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrH-Iw-h5Y">
-                                                    <rect key="frame" x="5" y="95" width="120" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="rrH-Iw-h5Y" firstAttribute="top" secondItem="aSs-Ef-VD0" secondAttribute="bottom" constant="10" id="24M-2M-kP1"/>
-                                                <constraint firstAttribute="trailing" secondItem="rrH-Iw-h5Y" secondAttribute="trailing" constant="5" id="6Zo-JH-I1Q"/>
-                                                <constraint firstItem="rrH-Iw-h5Y" firstAttribute="leading" secondItem="W4L-W5-lIZ" secondAttribute="leading" constant="5" id="Yl1-OB-VDx"/>
-                                                <constraint firstAttribute="trailing" secondItem="aSs-Ef-VD0" secondAttribute="trailing" constant="10" id="ZVg-Ks-v0t"/>
-                                                <constraint firstItem="aSs-Ef-VD0" firstAttribute="leading" secondItem="W4L-W5-lIZ" secondAttribute="leading" constant="10" id="cpO-Yf-nOa"/>
-                                                <constraint firstItem="aSs-Ef-VD0" firstAttribute="top" secondItem="W4L-W5-lIZ" secondAttribute="top" constant="10" id="wEP-FU-UYj"/>
-                                                <constraint firstAttribute="bottom" secondItem="rrH-Iw-h5Y" secondAttribute="bottom" constant="18" id="zzF-qY-wE3"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="130" height="130"/>
-                                        <connections>
-                                            <outlet property="bankImageView" destination="aSs-Ef-VD0" id="kZr-U0-ExW"/>
-                                            <outlet property="bankLabel" destination="rrH-Iw-h5Y" id="Iyr-Zr-wAb"/>
-                                            <outlet property="containerView" destination="W4L-W5-lIZ" id="9R0-wF-ZXj"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="PcC-iC-mcN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="PcC-iC-mcN" firstAttribute="trailing" secondItem="Dfo-4Q-Tvv" secondAttribute="trailing" id="0Tz-rz-luY"/>
-                            <constraint firstItem="Dfo-4Q-Tvv" firstAttribute="top" secondItem="PcC-iC-mcN" secondAttribute="top" id="3N4-3Z-DvX"/>
-                            <constraint firstItem="Dfo-4Q-Tvv" firstAttribute="leading" secondItem="PcC-iC-mcN" secondAttribute="leading" id="CZu-c0-lm1"/>
-                            <constraint firstItem="PcC-iC-mcN" firstAttribute="bottom" secondItem="Dfo-4Q-Tvv" secondAttribute="bottom" id="nQB-vH-GSb"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="bankCollectionView" destination="Dfo-4Q-Tvv" id="KKv-o0-Ni4"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TfT-Xw-StJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

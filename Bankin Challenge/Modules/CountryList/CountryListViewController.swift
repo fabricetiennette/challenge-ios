@@ -14,8 +14,13 @@ class CountryListViewController: UIViewController, Storyboarded {
         setupTableView()
         setupBindings()
     }
+}
 
-    private func setupBindings() {
+// MARK: - Private Methods
+
+private extension CountryListViewController {
+
+    func setupBindings() {
         guard let viewModel = viewModel else { return }
         viewModel.countriesHandler = { [weak self] countries in
             guard let self = self else { return }
@@ -31,7 +36,7 @@ class CountryListViewController: UIViewController, Storyboarded {
         viewModel.getCountry()
     }
 
-    private func setupTableView() {
+    func setupTableView() {
         countryTableView.separatorStyle = .none
         countryTableView.dataSource = countryDataSource
         countryTableView.delegate = countryDataSource

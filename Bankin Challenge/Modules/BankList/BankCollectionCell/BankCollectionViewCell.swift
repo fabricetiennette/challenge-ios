@@ -12,6 +12,10 @@ class BankCollectionViewCell: UICollectionViewCell {
 
     weak var delegate: BankCollectionViewDelegate?
 
+    override class func awakeFromNib() {
+        super.awakeFromNib()
+    }
+
     override func prepareForReuse() {
         super.prepareForReuse()
         bankImageView.image = nil

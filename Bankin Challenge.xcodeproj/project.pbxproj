@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C2C1B302602A1C00069E29F /* BankCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2C1B2F2602A1C00069E29F /* BankCollectionViewCell.xib */; };
 		2C72A8DB2600D610003CCD13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A8DA2600D610003CCD13 /* AppDelegate.swift */; };
 		2C72A8DD2600D610003CCD13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A8DC2600D610003CCD13 /* SceneDelegate.swift */; };
 		2C72A8DF2600D610003CCD13 /* CountryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A8DE2600D610003CCD13 /* CountryListViewController.swift */; };
@@ -59,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		18B347AB4BC648DACE89F579 /* Pods_Bankin_Challenge_Bankin_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bankin_Challenge_Bankin_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C2C1B2F2602A1C00069E29F /* BankCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankCollectionViewCell.xib; sourceTree = "<group>"; };
 		2C72A8D72600D610003CCD13 /* Bankin Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bankin Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C72A8DA2600D610003CCD13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C72A8DC2600D610003CCD13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				2CB2BD51260177F200A26ABC /* BankCollectionViewCell.swift */,
+				2C2C1B2F2602A1C00069E29F /* BankCollectionViewCell.xib */,
 			);
 			path = BankCollectionCell;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2C1B302602A1C00069E29F /* BankCollectionViewCell.xib in Resources */,
 				2C72A8E72600D612003CCD13 /* LaunchScreen.storyboard in Resources */,
 				2C72A8E42600D612003CCD13 /* Assets.xcassets in Resources */,
 				2C72A8E22600D610003CCD13 /* Main.storyboard in Resources */,
