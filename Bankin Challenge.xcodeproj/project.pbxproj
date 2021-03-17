@@ -3,18 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2C72A8DB2600D610003CCD13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A8DA2600D610003CCD13 /* AppDelegate.swift */; };
 		2C72A8DD2600D610003CCD13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A8DC2600D610003CCD13 /* SceneDelegate.swift */; };
-		2C72A8DF2600D610003CCD13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A8DE2600D610003CCD13 /* ViewController.swift */; };
+		2C72A8DF2600D610003CCD13 /* CountryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A8DE2600D610003CCD13 /* CountryListViewController.swift */; };
 		2C72A8E22600D610003CCD13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C72A8E02600D610003CCD13 /* Main.storyboard */; };
 		2C72A8E42600D612003CCD13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C72A8E32600D612003CCD13 /* Assets.xcassets */; };
 		2C72A8E72600D612003CCD13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C72A8E52600D612003CCD13 /* LaunchScreen.storyboard */; };
 		2C72A8F22600D612003CCD13 /* Bankin_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A8F12600D612003CCD13 /* Bankin_ChallengeTests.swift */; };
 		2C72A8FD2600D612003CCD13 /* Bankin_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A8FC2600D612003CCD13 /* Bankin_ChallengeUITests.swift */; };
+		2C72A9162600DA72003CCD13 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A9152600DA72003CCD13 /* Coordinator.swift */; };
+		2C72A91E2600DBB4003CCD13 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A91D2600DBB4003CCD13 /* RootCoordinator.swift */; };
+		2C72A9282600DDC0003CCD13 /* CountryListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A9272600DDC0003CCD13 /* CountryListCoordinator.swift */; };
+		2C72A92D2600DE8C003CCD13 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A92C2600DE8C003CCD13 /* Storyboarded.swift */; };
+		2C72A93F2600E5BA003CCD13 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A93E2600E5BA003CCD13 /* Bank.swift */; };
+		2C72A9472600E6ED003CCD13 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A9462600E6ED003CCD13 /* Country.swift */; };
+		2C72A94C2600E7C7003CCD13 /* CountryListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A94B2600E7C7003CCD13 /* CountryListService.swift */; };
+		2C72A95F26011506003CCD13 /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A95E26011506003CCD13 /* CountryListViewModel.swift */; };
+		2C72A971260123D7003CCD13 /* CountryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A970260123D7003CCD13 /* CountryDataSource.swift */; };
+		2C72A97E26012577003CCD13 /* CountryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A97D26012577003CCD13 /* CountryTableCell.swift */; };
+		2C72A98426012B99003CCD13 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72A98326012B99003CCD13 /* UIImageView+.swift */; };
+		2CB2BD302601655900A26ABC /* BankListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB2BD2F2601655900A26ABC /* BankListViewController.swift */; };
+		2CB2BD3826016B5400A26ABC /* BankCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB2BD3726016B5400A26ABC /* BankCoordinator.swift */; };
+		2CB2BD40260172A400A26ABC /* BankListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB2BD3F260172A400A26ABC /* BankListViewModel.swift */; };
+		2CB2BD462601768300A26ABC /* BankDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB2BD452601768300A26ABC /* BankDataSource.swift */; };
+		2CB2BD52260177F200A26ABC /* BankCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB2BD51260177F200A26ABC /* BankCollectionViewCell.swift */; };
+		73DFCF3935A55C2CF5EA7A3E /* Pods_Bankin_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EFFA94A8E323B4C4F383F6 /* Pods_Bankin_Challenge.framework */; };
+		8983336856479A701D0D5727 /* Pods_Bankin_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2AC45B60AC90C9D778DDAA6 /* Pods_Bankin_ChallengeTests.framework */; };
+		FBC0CFFA742288BB3B9DEABF /* Pods_Bankin_Challenge_Bankin_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B347AB4BC648DACE89F579 /* Pods_Bankin_Challenge_Bankin_ChallengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18B347AB4BC648DACE89F579 /* Pods_Bankin_Challenge_Bankin_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bankin_Challenge_Bankin_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C72A8D72600D610003CCD13 /* Bankin Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bankin Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C72A8DA2600D610003CCD13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C72A8DC2600D610003CCD13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C72A8DE2600D610003CCD13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C72A8DE2600D610003CCD13 /* CountryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewController.swift; sourceTree = "<group>"; };
 		2C72A8E12600D610003CCD13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C72A8E32600D612003CCD13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C72A8E62600D612003CCD13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +69,30 @@
 		2C72A8F82600D612003CCD13 /* Bankin ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bankin ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C72A8FC2600D612003CCD13 /* Bankin_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bankin_ChallengeUITests.swift; sourceTree = "<group>"; };
 		2C72A8FE2600D612003CCD13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C72A9152600DA72003CCD13 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2C72A91D2600DBB4003CCD13 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		2C72A9272600DDC0003CCD13 /* CountryListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListCoordinator.swift; sourceTree = "<group>"; };
+		2C72A92C2600DE8C003CCD13 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		2C72A93E2600E5BA003CCD13 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		2C72A9462600E6ED003CCD13 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		2C72A94B2600E7C7003CCD13 /* CountryListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListService.swift; sourceTree = "<group>"; };
+		2C72A95E26011506003CCD13 /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
+		2C72A970260123D7003CCD13 /* CountryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataSource.swift; sourceTree = "<group>"; };
+		2C72A97D26012577003CCD13 /* CountryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableCell.swift; sourceTree = "<group>"; };
+		2C72A98326012B99003CCD13 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
+		2CB2BD2F2601655900A26ABC /* BankListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListViewController.swift; sourceTree = "<group>"; };
+		2CB2BD3726016B5400A26ABC /* BankCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCoordinator.swift; sourceTree = "<group>"; };
+		2CB2BD3F260172A400A26ABC /* BankListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListViewModel.swift; sourceTree = "<group>"; };
+		2CB2BD452601768300A26ABC /* BankDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDataSource.swift; sourceTree = "<group>"; };
+		2CB2BD51260177F200A26ABC /* BankCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCollectionViewCell.swift; sourceTree = "<group>"; };
+		47CA2D37C22CEF8F7226B02E /* Pods-Bankin ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankin ChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-Bankin ChallengeTests/Pods-Bankin ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F1DAED5303B4F947B8CAD43 /* Pods-Bankin ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankin ChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-Bankin ChallengeTests/Pods-Bankin ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		71DAFEF18EF77C8A8BFC151E /* Pods-Bankin Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankin Challenge.release.xcconfig"; path = "Target Support Files/Pods-Bankin Challenge/Pods-Bankin Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		83406F1C3C3BED12E0832AF8 /* Pods-Bankin Challenge-Bankin ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankin Challenge-Bankin ChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-Bankin Challenge-Bankin ChallengeUITests/Pods-Bankin Challenge-Bankin ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B5EFFA94A8E323B4C4F383F6 /* Pods_Bankin_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bankin_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA4FEE77425C2FAE6066527B /* Pods-Bankin Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankin Challenge.debug.xcconfig"; path = "Target Support Files/Pods-Bankin Challenge/Pods-Bankin Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		E2AC45B60AC90C9D778DDAA6 /* Pods_Bankin_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bankin_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99618BCD5196704C62095F0 /* Pods-Bankin Challenge-Bankin ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankin Challenge-Bankin ChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bankin Challenge-Bankin ChallengeUITests/Pods-Bankin Challenge-Bankin ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DFCF3935A55C2CF5EA7A3E /* Pods_Bankin_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8983336856479A701D0D5727 /* Pods_Bankin_ChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC0CFFA742288BB3B9DEABF /* Pods_Bankin_Challenge_Bankin_ChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +130,8 @@
 				2C72A8F02600D612003CCD13 /* Bankin ChallengeTests */,
 				2C72A8FB2600D612003CCD13 /* Bankin ChallengeUITests */,
 				2C72A8D82600D610003CCD13 /* Products */,
+				FB4A93DF58B1A7A3878214E8 /* Pods */,
+				43A32FF2E1D34F54144E083E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +148,13 @@
 		2C72A8D92600D610003CCD13 /* Bankin Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				2C72A98226012B84003CCD13 /* Extensions */,
 				2C72A8DA2600D610003CCD13 /* AppDelegate.swift */,
 				2C72A8DC2600D610003CCD13 /* SceneDelegate.swift */,
-				2C72A8DE2600D610003CCD13 /* ViewController.swift */,
+				2C72A91D2600DBB4003CCD13 /* RootCoordinator.swift */,
 				2C72A8E02600D610003CCD13 /* Main.storyboard */,
+				2C72A93D2600E58D003CCD13 /* Model */,
+				2C72A9142600DA60003CCD13 /* Modules */,
 				2C72A8E32600D612003CCD13 /* Assets.xcassets */,
 				2C72A8E52600D612003CCD13 /* LaunchScreen.storyboard */,
 				2C72A8E82600D612003CCD13 /* Info.plist */,
@@ -128,6 +180,122 @@
 			path = "Bankin ChallengeUITests";
 			sourceTree = "<group>";
 		};
+		2C72A9142600DA60003CCD13 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2C72A9262600DDA0003CCD13 /* CountryList */,
+				2CB2BD2E2601650200A26ABC /* BankList */,
+				2C72A9252600DD98003CCD13 /* Common */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2C72A9252600DD98003CCD13 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2C72A9152600DA72003CCD13 /* Coordinator.swift */,
+				2C72A92C2600DE8C003CCD13 /* Storyboarded.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2C72A9262600DDA0003CCD13 /* CountryList */ = {
+			isa = PBXGroup;
+			children = (
+				2C72A9272600DDC0003CCD13 /* CountryListCoordinator.swift */,
+				2C72A8DE2600D610003CCD13 /* CountryListViewController.swift */,
+				2C72A95E26011506003CCD13 /* CountryListViewModel.swift */,
+				2C72A94B2600E7C7003CCD13 /* CountryListService.swift */,
+				2C72A975260123DC003CCD13 /* DataSource */,
+				2C72A97C2601255D003CCD13 /* CountryTableCell */,
+			);
+			path = CountryList;
+			sourceTree = "<group>";
+		};
+		2C72A93D2600E58D003CCD13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C72A93E2600E5BA003CCD13 /* Bank.swift */,
+				2C72A9462600E6ED003CCD13 /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C72A975260123DC003CCD13 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				2C72A970260123D7003CCD13 /* CountryDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		2C72A97C2601255D003CCD13 /* CountryTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				2C72A97D26012577003CCD13 /* CountryTableCell.swift */,
+			);
+			path = CountryTableCell;
+			sourceTree = "<group>";
+		};
+		2C72A98226012B84003CCD13 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C72A98326012B99003CCD13 /* UIImageView+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2CB2BD2E2601650200A26ABC /* BankList */ = {
+			isa = PBXGroup;
+			children = (
+				2CB2BD50260177CF00A26ABC /* BankCollectionCell */,
+				2CB2BD442601765C00A26ABC /* DataSource */,
+				2CB2BD2F2601655900A26ABC /* BankListViewController.swift */,
+				2CB2BD3726016B5400A26ABC /* BankCoordinator.swift */,
+				2CB2BD3F260172A400A26ABC /* BankListViewModel.swift */,
+			);
+			path = BankList;
+			sourceTree = "<group>";
+		};
+		2CB2BD442601765C00A26ABC /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				2CB2BD452601768300A26ABC /* BankDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		2CB2BD50260177CF00A26ABC /* BankCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				2CB2BD51260177F200A26ABC /* BankCollectionViewCell.swift */,
+			);
+			path = BankCollectionCell;
+			sourceTree = "<group>";
+		};
+		43A32FF2E1D34F54144E083E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5EFFA94A8E323B4C4F383F6 /* Pods_Bankin_Challenge.framework */,
+				18B347AB4BC648DACE89F579 /* Pods_Bankin_Challenge_Bankin_ChallengeUITests.framework */,
+				E2AC45B60AC90C9D778DDAA6 /* Pods_Bankin_ChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB4A93DF58B1A7A3878214E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA4FEE77425C2FAE6066527B /* Pods-Bankin Challenge.debug.xcconfig */,
+				71DAFEF18EF77C8A8BFC151E /* Pods-Bankin Challenge.release.xcconfig */,
+				E99618BCD5196704C62095F0 /* Pods-Bankin Challenge-Bankin ChallengeUITests.debug.xcconfig */,
+				83406F1C3C3BED12E0832AF8 /* Pods-Bankin Challenge-Bankin ChallengeUITests.release.xcconfig */,
+				47CA2D37C22CEF8F7226B02E /* Pods-Bankin ChallengeTests.debug.xcconfig */,
+				5F1DAED5303B4F947B8CAD43 /* Pods-Bankin ChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +303,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C72A9012600D612003CCD13 /* Build configuration list for PBXNativeTarget "Bankin Challenge" */;
 			buildPhases = (
+				0E1A206E5460EF75DB5DC230 /* [CP] Check Pods Manifest.lock */,
 				2C72A8D32600D610003CCD13 /* Sources */,
 				2C72A8D42600D610003CCD13 /* Frameworks */,
 				2C72A8D52600D610003CCD13 /* Resources */,
+				9C556C0DB18930ADD4D19D76 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +322,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C72A9042600D612003CCD13 /* Build configuration list for PBXNativeTarget "Bankin ChallengeTests" */;
 			buildPhases = (
+				A20A0E5601BA976E5F33BC10 /* [CP] Check Pods Manifest.lock */,
 				2C72A8E92600D612003CCD13 /* Sources */,
 				2C72A8EA2600D612003CCD13 /* Frameworks */,
 				2C72A8EB2600D612003CCD13 /* Resources */,
@@ -170,9 +341,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C72A9072600D612003CCD13 /* Build configuration list for PBXNativeTarget "Bankin ChallengeUITests" */;
 			buildPhases = (
+				275A615BB4EF9B74F1CA58AE /* [CP] Check Pods Manifest.lock */,
 				2C72A8F42600D612003CCD13 /* Sources */,
 				2C72A8F52600D612003CCD13 /* Frameworks */,
 				2C72A8F62600D612003CCD13 /* Resources */,
+				58E0C875462A3AF8412B3D2E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +426,133 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E1A206E5460EF75DB5DC230 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bankin Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		275A615BB4EF9B74F1CA58AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bankin Challenge-Bankin ChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58E0C875462A3AF8412B3D2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bankin Challenge-Bankin ChallengeUITests/Pods-Bankin Challenge-Bankin ChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bankin Challenge-Bankin ChallengeUITests/Pods-Bankin Challenge-Bankin ChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bankin Challenge-Bankin ChallengeUITests/Pods-Bankin Challenge-Bankin ChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C556C0DB18930ADD4D19D76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bankin Challenge/Pods-Bankin Challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bankin Challenge/Pods-Bankin Challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bankin Challenge/Pods-Bankin Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A20A0E5601BA976E5F33BC10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bankin ChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C72A8D32600D610003CCD13 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C72A8DF2600D610003CCD13 /* ViewController.swift in Sources */,
+				2CB2BD3826016B5400A26ABC /* BankCoordinator.swift in Sources */,
+				2CB2BD52260177F200A26ABC /* BankCollectionViewCell.swift in Sources */,
+				2C72A94C2600E7C7003CCD13 /* CountryListService.swift in Sources */,
+				2CB2BD40260172A400A26ABC /* BankListViewModel.swift in Sources */,
+				2C72A9162600DA72003CCD13 /* Coordinator.swift in Sources */,
+				2C72A98426012B99003CCD13 /* UIImageView+.swift in Sources */,
+				2CB2BD462601768300A26ABC /* BankDataSource.swift in Sources */,
+				2C72A9472600E6ED003CCD13 /* Country.swift in Sources */,
+				2C72A93F2600E5BA003CCD13 /* Bank.swift in Sources */,
+				2C72A8DF2600D610003CCD13 /* CountryListViewController.swift in Sources */,
+				2CB2BD302601655900A26ABC /* BankListViewController.swift in Sources */,
+				2C72A971260123D7003CCD13 /* CountryDataSource.swift in Sources */,
+				2C72A9282600DDC0003CCD13 /* CountryListCoordinator.swift in Sources */,
+				2C72A91E2600DBB4003CCD13 /* RootCoordinator.swift in Sources */,
+				2C72A95F26011506003CCD13 /* CountryListViewModel.swift in Sources */,
 				2C72A8DB2600D610003CCD13 /* AppDelegate.swift in Sources */,
 				2C72A8DD2600D610003CCD13 /* SceneDelegate.swift in Sources */,
+				2C72A92D2600DE8C003CCD13 /* Storyboarded.swift in Sources */,
+				2C72A97E26012577003CCD13 /* CountryTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,12 +725,14 @@
 		};
 		2C72A9022600D612003CCD13 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA4FEE77425C2FAE6066527B /* Pods-Bankin Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B27HT7JX8Q;
 				INFOPLIST_FILE = "Bankin Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,12 +746,14 @@
 		};
 		2C72A9032600D612003CCD13 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71DAFEF18EF77C8A8BFC151E /* Pods-Bankin Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B27HT7JX8Q;
 				INFOPLIST_FILE = "Bankin Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +767,7 @@
 		};
 		2C72A9052600D612003CCD13 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47CA2D37C22CEF8F7226B02E /* Pods-Bankin ChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +790,7 @@
 		};
 		2C72A9062600D612003CCD13 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F1DAED5303B4F947B8CAD43 /* Pods-Bankin ChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +813,7 @@
 		};
 		2C72A9082600D612003CCD13 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E99618BCD5196704C62095F0 /* Pods-Bankin Challenge-Bankin ChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +834,7 @@
 		};
 		2C72A9092600D612003CCD13 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83406F1C3C3BED12E0832AF8 /* Pods-Bankin Challenge-Bankin ChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
